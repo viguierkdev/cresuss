@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Users Web Application</title>
+    </head>
+    <body>
+		<h2 class="h2">Voir les comptes</h2>
+		<table>
+				<thead>
+					<tr>
+						<th>Account Id</th>
+						<th>Balance</th>
+						<th>Ajouter des fonds</th>
+						<th>Supprimer des fonds</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:if="${accounts.empty}"> <!-- users vient de UserController.java -->
+						<td colspan="3">Aucun compte lié en base de données</td>
+					</tr>
+					<tr th:each="account: ${accounts}"> <!-- users vient de UserController.java -->
+						<td><span th:text="${account.accId}"> Account Id </span></td>
+						<td><span th:text="${account.balance}"> Balance </span></td>
+						<td>
+							<div class="form-group">
+								<label for="toAddInput"></label> 
+								<input type="text" class="form-control" id="toAddInput">
+							</div>
+							<a th:href="@{/}"><button class="btn btn-info">Ajouter(non)</button></a>
+						</td>
+						<td>
+							<div class="form-group">
+								<label for="toAddInput"></label> 
+								<input type="text" class="form-control" id="toAddInput">
+							</div>
+							<a th:href="@{/}"><button class="btn btn-info">retirer(non)</button></a>
+						</td>
+					</tr>
+				</tbody>
+		</table>
+		<a th:href="@{/}"><button class="btn btn-info">RETOUR</button></a>
+    </body>
+</html>
