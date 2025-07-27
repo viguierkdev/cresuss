@@ -57,4 +57,19 @@ Il y a actuelelemnt 4 pages, dont une non utilisée:
 ••• affiche les comptes de cet utilisateur. Les boutons ne font rien (a cause d'une erreur 415, mes requetes PUT ne fonctionnent pas)
 ••• Bouton RETOUR pour revenir au home.xtml
 
+= IV. Outils utilisés
+
+• Visual Studio v1.102.1
+https://code.visualstudio.com/
+• Java SE Development Kit v24.0.2
+https://www.oracle.com/fr/java/technologies/downloads/#jdk24-windows
+• Apache Maven v3.9.11
+https://maven.apache.org/download.cgi
+• Spring Boot v3.5.3
+https://docs.spring.io/spring-boot/installing.html
+• MySQL 8.0.43
+https://dev.mysql.com/downloads/installer/
+• Postman
+https://www.postman.com/downloads/
+
 Merci de votre lecture
